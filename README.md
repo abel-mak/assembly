@@ -14,7 +14,7 @@ similarly for 16-bit and 8-bit register contains the lowest 16 bits and 8 bits.
 - the processor keep track of next instruction to be executed by storing the adress of next
 instruction in rip. a safer way to changing rip is by using jmp. 
 
--for syscall error check carry flag, the carry flag value is the first bit in rflags register
+- for syscall error check carry flag, the carry flag value is the first bit in rflags register
 so it's either 0 or 1. 
 
-- -fno-builtin flag in gcc don't recognize built-in functions that do not begin with __builtin_ as prefix. 
+- "-fno-builtin" flag in gcc don't recognize built-in functions that do not begin with __builtin_ as prefix. 

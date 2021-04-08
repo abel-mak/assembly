@@ -18,3 +18,20 @@ instruction in rip. a safer way to changing rip is by using jmp.
 so it's either 0 or 1. 
 
 - "-fno-builtin" flag in gcc don't recognize built-in functions that do not begin with __builtin_ as prefix. 
+# Links
+1- [How many bytes resb, resw, resd, resq allocate in nasm?](https://stackoverflow.com/questions/44860003/how-many-bytes-do-resb-resw-resd-resq-allocate-in-nasm)
+2- [calling printf/scanf inside assembly code.](https://stackoverflow.com/questions/20082414/mac-os-x-32-bit-nasm-assembly-program-using-main-and-scanf-printf)
+3- [Register function calls.](https://www.cs.uaf.edu/2017/fall/cs301/reference/x86_64.html)
+4- [OS X -x64 stack not 16 byte aligned](https://stackoverflow.com/questions/43354658/os-x-x64-stack-not-16-byte-aligned-error)
+5- [Why do C compilers prepend underscores to external names?](https://stackoverflow.com/questions/2627511/why-do-c-compilers-prepend-underscores-to-external-names)
+6- [lectures on assembly](https://www.cs.uaf.edu/2017/fall/cs301/lecture/)
+7- [Inconsistent strcmp() return value when passing strings as pointers or as literals](https://stackoverflow.com/questions/27751221/inconsistent-strcmp-return-value-when-passing-strings-as-pointers-or-as-litera)
+8- [Options Controlling C Dialect](https://gcc.gnu.org/onlinedocs/gcc-4.2.2/gcc/C-Dialect-Options.html)
+# How to set intel syntax in lldb
+```
+$> touch ~/.lldbinit
+$> echo "settings set target.x86-disassembly-flavor intel" > ~/.lldbinit
+```
+# Useful lldb commands
+memory read (read from an adrress). 
+register read (you can specify format with --format, use command 'help format' for available format). 

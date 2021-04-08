@@ -5,7 +5,6 @@
 #include <errno.h>
 #include <fcntl.h>
 
-extern void asm_main();
 extern char *ft_strcpy();
 extern size_t ft_strlen();
 extern int	ft_strcmp();

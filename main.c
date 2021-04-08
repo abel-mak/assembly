@@ -77,8 +77,8 @@ void	test_ft_read()
 	char dest1[20];
 	char dest2[20];
 
-	fd = 1; 
-	fd1 = 1;
+	fd = 0; 
+	fd1 = 0;
 	read_ret = ft_read(1, dest1, 10);
 	dest1[read_ret] = '\0';
 	printf("%s\n", dest1);

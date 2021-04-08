@@ -35,3 +35,8 @@ $> echo "settings set target.x86-disassembly-flavor intel" > ~/.lldbinit
 # Useful lldb commands
 - memory read (read from an adrress). 
 - register read (you can specify format with --format, use command 'help format' for available format). 
+# How to compile
+run make it will generate the library, then compile main.c using library
+```
+gcc main.c -L . -lasm
+```

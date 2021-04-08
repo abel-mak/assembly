@@ -33,5 +33,5 @@ $> touch ~/.lldbinit
 $> echo "settings set target.x86-disassembly-flavor intel" > ~/.lldbinit
 ```
 # Useful lldb commands
-memory read (read from an adrress). 
-register read (you can specify format with --format, use command 'help format' for available format). 
+- memory read (read from an adrress). 
+- register read (you can specify format with --format, use command 'help format' for available format). 
